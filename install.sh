@@ -1,5 +1,9 @@
 #!/bin/bash
 
+apt-get update
+
+apt-get upgrade -y
+
 mkdir /tmp/setup
 
 cd /tmp/setup
@@ -12,7 +16,7 @@ unzip setup.zip
 mv lightdm.conf /etc/lightdm/lightdm.conf
 
 # install packages for libkiclient
-apt install libqt5webkit5 libqt5script5
+apt-get install libqt5webkit5 libqt5script5 -y
 
 # install software
 mv backup /usr/local/bin/backup
@@ -31,7 +35,7 @@ chmod +x /usr/local/bin/libkiclient
 # remove ctrl-alt-backspace, mintwelcome, mintupdate
 # add libkiclient and demapper
 
-mv autostart/ /home/libki/.config/autostart/
+mv autostart /home/libki/.config/
 
 # edit screensaver and power management (sleep/hibernation, power button)
 # TESTING
@@ -44,14 +48,15 @@ mv user /home/public/.config/dconf/user
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 
-# change start page
-
-mv Preferences /home/public/.config/google-chrome/Default/Preferences
-
 # change keyring password to empty
 
 rm /home/public/.local/share/keyrings/*
 google-chrome
+
+
+# change start page
+
+mv Preferences /home/public/.config/google-chrome/Default/Preferences
 
 # edit quick start, remove terminal, firefox
 
@@ -60,14 +65,14 @@ mv cinnamon /home/public/.cinnamon
 
 # edit writer, make docx default
 
-mv libreoffice /home/public/.config/libreoffice
+mv libreoffice /home/public/.config/
 
 # edit menu and delete logout/shutdown
 
 mv applet.js /usr/share/cinnamon/applets/menu@cinnamon.org/applet.js
 
 # add desktop icons
-mv Skrivbord/ /home/public/Skrivbord/
+mv Skrivbord /home/public/
 
 # install rbash
 apt install rbash
