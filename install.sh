@@ -52,13 +52,6 @@ dpkg -i google-chrome-stable_current_amd64.deb
 echo
 read -p "STARTA CHROME NU OCH STÄNG DET SEDAN. TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID <&1
 
-# change keyring password to empty
-
-rm /home/public/.local/share/keyrings/*
-
-echo
-read -p "STARTA CHROME IGEN OCH SÄTT ETT TOMT LÖSENORD. TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID2 <&1
-
 # change start page
 
 mv Preferences /home/public/.config/google-chrome/Default/Preferences
@@ -80,16 +73,19 @@ mv applet.js /usr/share/cinnamon/applets/menu@cinnamon.org/applet.js
 mv Skrivbord /home/public/
 
 # install rbash
-apt install rbash
+apt-get install rbash -y
 chsh -s /bin/rbash public
 
 # Copy and edit Libki.ini
 
 mv Libki.ini /home/public/.config/Libki.ini
-nano /home/public/.config/Libki.ini
 
 # chown everything
 
 chown public:public /home/public -R
 
 backup
+
+echo
+echo "KLAR"
+echo "Starta en ny terminal och kör 'xed .config/Libki.ini' och ändra det som behöver ändras (serveradress, datornamn och nummer i bild-urlen längst ner).
