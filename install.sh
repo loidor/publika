@@ -48,12 +48,12 @@ mv user /home/public/.config/dconf/user
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 
-google-chrome
+su public google-chrome
 # change keyring password to empty
 
 rm /home/public/.local/share/keyrings/*
 
-google-chrome
+su public google-chrome
 
 # change start page
 
