@@ -1,5 +1,14 @@
 #!/bin/bash
 
+### DOESN'T WORK ###
+
+# Folder moving, ie autostart, .cinnamon & Writer
+
+### Not implemented ###
+
+# Random wallpapers
+# Printer setup
+
 mkdir /tmp/setup
 
 cd /tmp/setup
