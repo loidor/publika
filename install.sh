@@ -48,11 +48,16 @@ mv user /home/public/.config/dconf/user
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 
-su public google-chrome
+### Run Chrome
+echo
+read -p "STARTA CHROME NU OCH STÄNG DET SEDAN. TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID
+
 # change keyring password to empty
 
 rm /home/public/.local/share/keyrings/*
 
+echo
+read -p "STARTA CHROME IGEN OCH SÄTT ETT TOMT LÖSENORD. TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID2
 su public google-chrome
 
 # change start page
