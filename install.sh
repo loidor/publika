@@ -8,9 +8,6 @@ wget https://github.com/loidor/publika/raw/master/setup.zip
 
 unzip setup.zip
 
-# update, upgrade
-apt update && apt upgrade -y
-
 # autologin, run restore on logout
 mv lightdm.conf /etc/lightdm/lightdm.conf
 
