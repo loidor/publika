@@ -31,3 +31,27 @@ chmod +x /usr/local/bin/demapper
 mv libkiclient /usr/local/bin/libkiclient
 chmod +x /usr/local/bin/libkiclient
 
+# edit autostart
+# remove ctrl-alt-backspace, mintwelcome, mintupdate
+# add libkiclient and demapper
+
+mv autostart /home/public/.config/
+
+# edit screensaver and power management (sleep/hibernation, power button)
+# TESTING
+mv user /home/public/.config/dconf/user
+
+#### add printer
+# lpadmin, test this out
+
+# install chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+
+google-chrome
+# change keyring password to empty
+
+rm /home/public/.local/share/keyrings/*
+
+google-chrome
+
