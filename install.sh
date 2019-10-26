@@ -55,3 +55,37 @@ rm /home/public/.local/share/keyrings/*
 
 google-chrome
 
+# change start page
+
+mv Preferences /home/public/.config/google-chrome/Default/Preferences
+
+# edit quick start, remove terminal, firefox
+
+rm /home/public/.cinnamon -rf
+mv cinnamon /home/public/.cinnamon
+
+# edit writer, make docx default
+
+mv libreoffice /home/public/.config/
+
+# edit menu and delete logout/shutdown
+
+mv applet.js /usr/share/cinnamon/applets/menu@cinnamon.org/applet.js
+
+# add desktop icons
+mv Skrivbord /home/public/
+
+# install rbash
+apt install rbash
+chsh -s /bin/rbash public
+
+# Copy and edit Libki.ini
+
+mv Libki.ini /home/public/.config/Libki.ini
+nano /home/public/.config/Libki.ini
+
+# chown everything
+
+chown public:public /home/public -R
+
+backup
