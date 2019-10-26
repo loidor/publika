@@ -45,7 +45,5 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 
 ### Run Chrome
-echo
-read -p "STARTA CHROME NU OCH STÄNG DET SEDAN. TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID
-
-echo "good"
+echo "STARTA CHROME NU OCH STÄNG DET SEDAN."
+read -p "TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID
