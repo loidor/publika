@@ -60,6 +60,8 @@ dpkg -i google-chrome-stable_current_amd64.deb
 ### Run Chrome
 echo
 read -p "STARTA CHROME NU OCH STÄNG DET SEDAN. TRYCK ENTER NÄR DET ÄR KLART." CHROMEVOID <&1
+echo
+echo "Låt det vara igång en halv minut eller så. När du sen får en fråga om att sätta lösenord, sätt det till tomt."
 
 # change start page
 
@@ -99,6 +101,5 @@ echo "KLAR"
 echo
 echo "Kör 'xed .config/Libki.ini' och ändra det som behöver ändras (serveradress, datornamn och nummer i bild-urlen längst ner)."
 echo
-echo "När det är klart, kör 'backup'."
+echo "När det är klart, kör 'backup' för att spara inställningarna."
 echo
-echo "Starta sedan om datorn och starta Chrome igen."
