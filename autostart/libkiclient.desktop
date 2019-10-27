@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=libkiclient
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[sv]=libkiclient
+Comment[sv]=Beskrivning saknas
+X-GNOME-Autostart-Delay=0

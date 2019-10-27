@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=demapper
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[sv]=demapper
+Comment[sv]=Beskrivning saknas
+X-GNOME-Autostart-Delay=2
