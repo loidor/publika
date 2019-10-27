@@ -96,6 +96,9 @@ backup
 
 echo
 echo "KLAR"
-echo "Starta en ny terminal och kör 'xed .config/Libki.ini' och ändra det som behöver ändras (serveradress, datornamn och nummer i bild-urlen längst ner)."
+echp
+echo "Kör 'xed .config/Libki.ini' och ändra det som behöver ändras (serveradress, datornamn och nummer i bild-urlen längst ner)."
 echo
-echo "När det är klart, kör 'backup' i den här terminalen."
+echo "När det är klart, kör 'backup'."
+echo
+echo "Starta sedan om datorn och starta Chrome igen."
