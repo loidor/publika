@@ -89,6 +89,8 @@ chown public:public /home/public -R
 
 lpadmin -p Bibliotekets_stora_skrivare -E -v https://print.sunne.se/ipp/456531693383688 -m foomatic-db-compressed-ppds:0/ppd/foomatic-ppd/Generic-PostScript_Printer-Postscript.ppd
 
+lpadmin -d Bibliotekets_stora_skrivare
+
 # Backup everything
 
 backup
@@ -103,3 +105,5 @@ echo
 echo "Sedan kan du starta om genom att köra 'reboot' och så är allt klart."
 echo
 echo "Bibliotekets skrivare är installerad."
+
+exit 0
