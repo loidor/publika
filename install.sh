@@ -1,14 +1,5 @@
 #!/bin/bash
 
-### DOESN'T WORK ###
-
-# Folder moving, ie autostart, .cinnamon & Writer
-
-### Not implemented ###
-
-# Random wallpapers
-# Printer setup
-
 mkdir /tmp/setup
 
 cd /tmp/setup
@@ -94,6 +85,12 @@ mv Libki.ini /home/public/.config/Libki.ini
 
 chown public:public /home/public -R
 
+# Add printer
+
+lpadmin -p Bibliotekets_stora_skrivare -E -v https://print.sunne.se/ipp/456531693383688 -m foomatic-db-compressed-ppds:0/ppd/foomatic-ppd/Generic-PostScript_Printer-Postscript.ppd
+
+# Backup everything
+
 backup
 
 echo
@@ -105,4 +102,4 @@ echo "När det är klart, kör 'backup' för att spara inställningarna."
 echo
 echo "Sedan kan du starta om genom att köra 'reboot' och så är allt klart."
 echo
-echo "Tänk på att ingen skrivare är installerad, så det behöver göras efteråt!"
+echo "Bibliotekets skrivare är installerad."
