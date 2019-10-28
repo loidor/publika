@@ -96,7 +96,7 @@ backup
 echo
 echo "KLAR"
 echo
-echo "Kör 'xed .config/Libki.ini' och ändra det som behöver ändras (serveradress, datornamn och nummer i bild-urlen längst ner)."
+echo "Kör 'nano .config/Libki.ini' och ändra det som behöver ändras (serveradress, datornamn och nummer i bild-urlen längst ner)."
 echo
 echo "När det är klart, kör 'backup' för att spara inställningarna."
 echo
